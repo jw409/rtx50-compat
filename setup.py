@@ -5,10 +5,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="rtx50-compat",
-    version="1.0.0",
+    version="2.0.1",
     author="JW",
     author_email="jw@diablogato.com",
-    description="RTX 50-series GPU compatibility layer for PyTorch and CUDA - enables sm_120 support",
+    description="RTX 50-series GPU compatibility layer with AI-assisted installation - enables sm_120 support",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/jw/rtx50-compat",

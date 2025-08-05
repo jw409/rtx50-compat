@@ -1,0 +1,29 @@
+Please validate the rtx50-compat v2.0.0 package:
+
+1. Check PyPI page: https://pypi.org/project/rtx50-compat/2.0.0/
+2. Review the AI-assisted installation features:
+   - AIAssistant class that detects claude/gemini CLI
+   - SmartInstaller that checks environment and suggests fixes
+   - get_ai_help_for_error() function for troubleshooting
+
+3. Test the package installation:
+```bash
+uv pip install rtx50-compat==2.0.0
+python -c "import rtx50_compat; print(rtx50_compat.__version__)"
+```
+
+4. Verify the smart features work:
+```python
+from rtx50_compat import AIAssistant, SmartInstaller
+print(AIAssistant.detect_assistants())
+installer = SmartInstaller()
+installer.check_environment()
+```
+
+5. Confirm the package:
+   - Properly imports and patches PyTorch for RTX 5090
+   - Detects AI assistants when available
+   - Provides helpful error messages and AI-generated fixes
+   - Version shows as "0.2.0" internally but 2.0.0 on PyPI
+
+Please verify this works correctly and that the AI assistance features are properly integrated.
